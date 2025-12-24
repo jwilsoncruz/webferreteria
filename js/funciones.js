@@ -344,3 +344,35 @@ function validando(token)
 {
 	acciones.enviar();
 }
+// MODAL DE IMÁGENES PARA "VER MÁS"
+document.addEventListener('DOMContentLoaded', function() {
+    // Seleccionamos todos los botones "Ver más"
+    const botonesVerMas = document.querySelectorAll('.boton-amarillo');
+    const modal = document.querySelector('.cuerpoimagen');
+    const modalImg = modal.querySelector('img');
+    const cerrar = modal.querySelector('.cerrarimagen');
+
+    // Abrir modal al hacer clic en un botón
+    botonesVerMas.forEach(boton => {
+        boton.addEventListener('click', function(e){
+            e.preventDefault(); // evita que el enlace abra la imagen directamente
+            const imgSrc = this.getAttribute('href'); // obtenemos la ruta de la imagen
+            modalImg.src = imgSrc; // asignamos la imagen al modal
+            modal.style.display = 'flex'; // mostramos el modal
+        });
+    });
+
+    // Cerrar modal al hacer clic en la X
+    cerrar.addEventListener('click', function(e){
+        e.preventDefault();
+        modal.style.display = 'none';
+    });
+
+    // Opcional: cerrar modal al hacer clic fuera de la imagen
+    modal.addEventListener('click', function(e){
+        if(e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+
