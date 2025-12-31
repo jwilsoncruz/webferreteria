@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="description" content="Ferreteria SuperMercado 33 años junto a tí">
+		<meta name="description" content="Ferreteria SuperMercado 34 años junto a tí">
 		<meta name="keywords" content="ferreteria beni, construccion">
 		<meta name="author" content="Wilson Cruz">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +14,14 @@
 		<link rel="stylesheet"  href="libs/owl/owl.theme.default.css">
 		<link rel="stylesheet"  href="css/style.css">
 		<link rel="shortcut icon"  href="img/icono.png">
-		 <script src="https://www.google.com/recaptcha/api.js"></script>
+		
 		<script src="https://kit.fontawesome.com/37ef4fca07.js" crossorigin="anonymous"></script>
 		<script src="js/jquery.js"></script>
 		<script src="js/jquery-ui.js"></script>
 		<script src="libs/wow/wow.js"></script>
 		<script src="libs/owl/owl.carousel.js"></script>
 		<script src="libs/jquery-validation/jquery-validation.js"></script>
-<		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">	
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">	
 
 	</head>
 <body class="abierto">
@@ -63,7 +63,11 @@
 						<a href="mailto:info@ferreteriasupermercado.com" class="email">info@ferreteriasupermercado.com</a>
 					</div>
 					<div class="columna columna-50 columna-mb-100 ">
-						<form  id="frmcontacto" action="registro.php"  method="post">
+						
+						<form id="frmcontacto" action="https://formspree.io/f/mjgvnlog" method="POST">
+<input type="hidden" name="_subject" value="Nuevo mensaje desde Ferretería SuperMercado">
+<input type="hidden" name="_next" value="https://jwilsoncruz.github.io/webferreteria/gracias.html">
+
 							<div class="form-bloques">
 								<input id="nombre" class="form-input" required type="text" placeholder="Nombre" name="nombre" >
 							</div>
@@ -105,7 +109,7 @@
 			<div class="container">
 				<div class="fila ">
 					<div class="columna columna-33  empujar-33 empujar-mb-0 columna-mb-100 orden lista-redes">
-						<a <a href="https://www.facebook.com/tddferreteriasupermercado/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+							<a href="https://www.facebook.com/tddferreteriasupermercado/" target="_blank"><i class="fab fa-facebook-f"></i></a>
 							<a href="https://www.instagram.com/FerreteriaSuperMercado" target="_blank"><i class="fab fa-instagram"></i></a>
 							<a href="https://wa.me/59177692950/?text=Llego%20desde%20la%20web%20necesito..." target="_blank"><i class="fab fa-whatsapp"></i></a>
 							<a href="https://www.tiktok.com/@fersupermerc" target="_blank"><i class="fab fa-tiktok"></i></a>
@@ -122,10 +126,6 @@
 	<div class="trama-2"></div>
 	<div class="logo-load"><img src="img/logo.png"></div>
 	<script src="js/funciones.js"></script>
-<script>
-  function validando(token) {
-    document.getElementById("frmcontacto").submit();
-  }
-</script>
+
 </body>
 </html>
