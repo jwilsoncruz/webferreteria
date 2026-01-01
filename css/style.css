@@ -370,3 +370,19 @@ footer .pie .lista-redes a{margin-left:1rem;margin-right:1rem;font-size:1.5rem;}
 	transform: translateY(-50%);
 }
 }
+
+
+.contenedor-contador {
+    padding: 20px;
+}
+.contenedor-contador h2 {
+    font-size: 3rem;
+    margin: 10px 0;
+    font-weight: 700;
+    color: #FFD700; /* Color amarillo/dorado */
+}
+.contenedor-contador p {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
