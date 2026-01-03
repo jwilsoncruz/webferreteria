@@ -232,5 +232,17 @@
         });
         new WOW().init();
     </script>
+
+    <script>
+    // Configuración de la oferta
+    const fechaFin = new Date("2026-01-05T23:59:59");
+    const hoy = new Date();
+    const bloqueOferta = document.getElementById("bloque-liquidacion");
+
+    // Si ya pasó el 5 de enero, el bloque desaparece solito
+    if (hoy > fechaFin) {
+        bloqueOferta.style.display = "none";
+    }
+</script>
 </body>
 </html>
