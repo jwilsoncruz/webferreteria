@@ -1,58 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<meta charset="utf-8">
-	<meta name="description" content="Ferreteria SuperMercado 33 años junto a tí">
-	<meta name="keywords" content="ferreteria beni, construccion">
-	<meta name="author" content="Alonso Perez">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Restaurante x - Nosotros</title>
-	<link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet"  href="css/normalice.css">		
-	<link rel="stylesheet"  href="libs/wow/animate.css">
-	<link rel="stylesheet"  href="libs/owl/owl.carousel.css">
-	<link rel="stylesheet"  href="libs/owl/owl.theme.default.css">
-	<link rel="stylesheet"  href="css/style.css">			
-	<link rel="shortcut icon"  href="img/icono.png">
-	<script src="https://kit.fontawesome.com/37ef4fca07.js" crossorigin="anonymous"></script>
-	<script src="js/jquery.js"></script>
-	<script src="js/jquery-ui.js"></script>	
-	<script src="libs/wow/wow.js"></script>	
-	<script src="libs/owl/owl.carousel.js"></script>
-	<script src="libs/jquery-validation/jquery-validation.js"></script>						
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet | Ferretería SuperMercado</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalice.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icono.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
+    <style>
+        body.intranet-bg {
+            background: linear-gradient(135deg, #003366 0%, #001122 100%);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            font-family: 'Asap', sans-serif;
+        }
+        .login-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            border-top: 5px solid #FFD700;
+        }
+        .login-card img { width: 120px; margin-bottom: 20px; }
+        .login-card h2 { color: #003366; margin-bottom: 10px; }
+        .login-card p { color: #666; font-size: 0.9rem; margin-bottom: 25px; }
+        .input-group { position: relative; margin-bottom: 20px; text-align: left; }
+        .input-group i { position: absolute; left: 15px; top: 15px; color: #003366; }
+        .input-group input {
+            width: 100%;
+            padding: 12px 12px 12px 45px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+        }
+        .btn-login {
+            background: #003366;
+            color: #FFD700;
+            border: none;
+            width: 100%;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn-login:hover { background: #004488; transform: translateY(-2px); }
+        .volver { display: block; margin-top: 20px; color: #003366; text-decoration: none; font-size: 0.8rem; }
+    </style>
 </head>
-<body class="abierto">
-	<header class="cabecera">
-		<div class="container">
-			<a href="index.html" class="link-logo">
-				<img class="logo" src="img/logo.png" width="138" height="140">
-			</a>
-			<nav class="menu">
-				<a href="index.html#lacarta" >Productos</a>
-				<a href="index.html#locales" >Local</a>
-				<a href="nosotros.html" class="seleccionado">Nosotros</a>
-				<a href="contacto.html" target="_self">Contacto</a>
-				<a href="intranet.html" target="_blank">Intranet</a>
-			</nav>
-			<a href="#" class="hamb"><i class="fas fa-bars"></i></a>
-		</div>
-	</header>
-<body>
-    <div class="container">
-        <h1></h1>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<body class="intranet-bg">
 
-        <form action="dashboard.html" method="post">
-            <input type="text" name="username" placeholder="Usuario" required>
-            <input type="password" name="password" placeholder="Contraseña" required>
-            <input type="submit" value="Iniciar Sesión">
+    <div class="login-card">
+        <img src="img/logo.png" alt="Logo">
+        <h2>Panel Administrativo</h2>
+        <p>Acceso exclusivo para personal autorizado</p>
+        
+        <form action="#">
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Usuario" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="btn-login">INGRESAR AL SISTEMA</button>
         </form>
+        
+        <a href="index.html" class="volver"><i class="fas fa-arrow-left"></i> Volver a la página principal</a>
     </div>
+
 </body>
 </html>
