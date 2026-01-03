@@ -6,15 +6,19 @@
     <title>Ferretería SuperMercado - 34 años junto a ti</title>
     
     <meta name="description" content="Ferretería SuperMercado 34 años junto a ti. Los mejores productos de calidad para tus proyectos en Trinidad, Beni.">
+    <meta name="keywords" content="ferreteria beni, construccion, trinidad bolivia, herramientas">
     <meta name="author" content="Wilson Cruz">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jwilsoncruz.github.io/webferreteria/">
     <meta property="og:title" content="Ferretería SuperMercado – 34 años junto a ti">
-    <meta property="og:description" content="Todo en ferretería y construcción. Calidad y precios insuperables.">
+    <meta property="og:description" content="Todo en ferretería y construcción. Calidad y precios insuperables en Trinidad, Beni.">
     <meta property="og:image" content="https://jwilsoncruz.github.io/webferreteria/img/Preview.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+    <meta property="og:image:secure_url" content="https://jwilsoncruz.github.io/webferreteria/img/Preview.jpg"> 
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ferretería SuperMercado – 34 años junto a ti">
+    <meta name="twitter:image" content="https://jwilsoncruz.github.io/webferreteria/img/Preview.jpg">
 
     <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalice.css">
@@ -23,60 +27,61 @@
     <link rel="stylesheet" href="libs/owl/owl.theme.default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/icono.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/37ef4fca07.js" crossorigin="anonymous"></script>
     <script src="js/jquery.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="libs/wow/wow.js"></script>
     <script src="libs/owl/owl.carousel.js"></script>
+    <script src="libs/jquery-validation/jquery-validation.js"></script>
 </head>
-
 <body class="abierto">
     <header class="cabecera">
         <div class="container">
             <a href="index.html" class="link-logo">
-                <img class="logo" src="img/logo.png" width="138" height="140" alt="Logo">
+                <img class="logo" src="img/logo.png" width="138" height="140">
             </a>
             <nav class="menu">
-                <a href="#lacarta">Productos</a>
-                <a href="#local">Local</a>
+                <a href="index.html#lacarta">Productos</a>
+                <a href="index.html#local">Local</a>
                 <a href="nosotros.html">Nosotros</a>
-                <a href="contacto.html">Contacto</a>
+                <a href="contacto.html" target="_self">Contacto</a>
                 <a href="intranet.html" target="_blank">Intranet</a>
             </nav>
             <a href="#" class="hamb"><i class="fas fa-bars"></i></a>
         </div>
     </header>
-
     <main>
         <section id="banner">
             <picture>
                 <source media="(max-width: 767px)" srcset="img/imagen0.jpg">
-                <img class="banner-home" src="img/imagen0.jpg" alt="Banner Principal">
+                <source media="(max-width: 991px)" srcset="img/imagen0.jpg">
+                <img class="banner-home" src="img/imagen0.jpg" width="1880" height="1245">
             </picture>
             <div class="container">
                 <div class="fila">
                     <div class="columna columna-50 columna-mb-100">
-                        <h1 class="wow slideInLeft" data-wow-duration="2s">Ferretería SuperMercado</h1>
-                        <p class="wow slideInLeft" data-wow-duration="2s">Los mejores productos de calidad para sus proyectos de construcción y renovación.</p>
-                        <a href="#lacarta" class="btn boton-transparente wow slideInLeft">Ver Productos</a>
+                        <h1 class="wow slideInLeft" data-wow-duration="2s">Ferreteria SuperMercado</h1>
+                        <p class="wow slideInLeft" data-wow-duration="2s">Los mejores productos de calidad para sus proyectos de construccion y renovacion.</p>
+                        <a href="#lacarta" class="btn boton-transparente wow slideInLeft" data-wow-duration="2s">Ver Productos</a>
                     </div>
                 </div>
             </div>
-            <a href="#lacarta" class="saltarina"><i class="fas fa-chevron-down"></i></a>
+            <a href="#" class="saltarina"><i class="fas fa-chevron-down"></i></a>
         </section>
 
         <section id="lacarta" class="seccion" style="background-color: #ffffff;">
             <div class="container">
                 <div class="fila">
                     <div class="columna columna-100 centrar-texto">
-                        <h2 class="titulos" style="color: #003366;">Nuestros Productos</h2>
+                        <h2 class="titulos wow slideInLeft" data-wow-duration="2s" style="color: #003366;">Nuestros Productos</h2>
                     </div>
                 </div>
-                <div class="fila margin-arriba">
+                <div class="fila margin-arriba columna ">
                     <div class="columna columna-50 columna-mb-100 sin-padding orden">
                         <div class="contenedor-cuadrado">
-                            <img src="img/img1.jpg">
+                            <img src="img/img1.jpg" >
                             <div class="contenido-cuadrado">
                                 <h2>Construcción y Obras</h2>
                                 <a href="img/img1.jpg" class="btn boton-amarillo">Ver más</a>
@@ -86,16 +91,16 @@
                     <div class="columna columna-50 columna-mb-100">
                         <div class="fila">
                             <div class="columna columna-50 columna-mb-100 sin-padding">
-                                <div class="contenedor-cuadrado"><img src="img/img2.jpg"><div class="contenido-cuadrado"><h2>Ferretería</h2><a href="img/img2.jpg" class="btn boton-amarillo">Ver</a></div></div>
+                                <div class="contenedor-cuadrado"><img src="img/img2.jpg" ><div class="contenido-cuadrado"><h2>Ferretería General</h2><a href="img/img2.jpg" class="btn boton-amarillo">Ver más</a></div></div>
                             </div>
                             <div class="columna columna-50 columna-mb-100 sin-padding">
-                                <div class="contenedor-cuadrado"><img src="img/img3.jpg"><div class="contenido-cuadrado"><h2>Pinturas</h2><a href="img/img3.jpg" class="btn boton-amarillo">Ver</a></div></div>
+                                <div class="contenedor-cuadrado"><img src="img/img3.jpg" ><div class="contenido-cuadrado"><h2>Pinturas y Acabados</h2><a href="img/img3.jpg"class="btn boton-amarillo">Ver más</a></div></div>
                             </div>
                             <div class="columna columna-50 columna-mb-100 sin-padding">
-                                <div class="contenedor-cuadrado"><img src="img/img4.jpg"><div class="contenido-cuadrado"><h2>Fontanería</h2><a href="img/img4.jpg" class="btn boton-amarillo">Ver</a></div></div>
+                                <div class="contenedor-cuadrado"><img src="img/img4.jpg" ><div class="contenido-cuadrado"><h2>Fontanería y Sanitarios</h2><a href="img/img4.jpg" class="btn boton-amarillo">Ver más</a></div></div>
                             </div>
                             <div class="columna columna-50 columna-mb-100 sin-padding">
-                                <div class="contenedor-cuadrado"><img src="img/img5.jpg"><div class="contenido-cuadrado"><h2>Electricidad</h2><a href="img/img5.jpg" class="btn boton-amarillo">Ver</a></div></div>
+                                <div class="contenedor-cuadrado"><img src="img/img5.jpg" ><div class="contenido-cuadrado"><h2>Electricidad e Iluminación</h2><a href="img/img5.jpg" class="btn boton-amarillo">Ver más</a></div></div>
                             </div>
                         </div>
                     </div>
@@ -103,93 +108,108 @@
             </div>
         </section>
 
-        <section id="local" class="seccion" style="background-color: #f8f9fa; color: #333; padding: 60px 0;">
-            <div class="container">
+        <section id="local" class="seccion" style="background-color: #f8f9fa; color: #333;">
+            <div class="container-full">
                 <div class="fila fila-centrada">
-                    <div class="columna columna-100 centrar-texto">
-                        <h2 class="titulos" style="color: #003366;">Nuestro Local</h2>
-                        <div style="text-align: left; max-width: 800px; margin: 0 auto; line-height: 1.8;">
+                    <div class="columna columna-50 columna-mb-100 centrar-texto">
+                        <h2 class="titulos wow slideInLeft" data-wow-duration="2s" style="color: #003366;">Local</h2>
+                        <div class="centrar-texto" style="line-height: 1.6;">
                             <h3 style="color: #004080;">Bienvenidos a Nuestra Ferretería</h3>
-                            <p>Ubicada estratégicamente en Trinidad, Beni, nuestro amplio local ofrece una experiencia de compra eficiente con secciones organizadas para cada necesidad.</p>
-                            <ul style="columns: 2; margin: 20px 0; color: #003366;">
+                            <p>Ubicada en el lugar estratégico de la ciudad, nuestra ferretería se ha convertido en un punto de referencia...</p>
+                            <ul style="text-align: left; display: inline-block; color: #333;">
                                 <li><strong>Construcción y Obras</strong></li>
                                 <li><strong>Ferretería General</strong></li>
                                 <li><strong>Fontanería y Sanitarios</strong></li>
                                 <li><strong>Electricidad e Iluminación</strong></li>
-                                <li><strong>Pinturas y Acabados</strong></li>
-                                <li><strong>Seguridad y Jardinería</strong></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="fila margin-arriba">
-                    <div class="columna columna-25 columna-mb-50 sin-padding">
-                        <div class="contenedor-cuadrado cont-rect"><img src="img/img6.jpg"><div class="contenido-cuadrado"><h2>Pinturas</h2></div></div>
+                    <div class="columna columna-50 columna-mb-100 sin-padding">
+                        <div class="contenedor-cuadrado cont-rect"><img src="img/img6.jpg" ><div class="contenido-cuadrado"><h2>Pinturas y Acabados</h2><a href="#" class="btn-circulo borde-blanco"><i class="fas fa-search"></i></a></div></div>
                     </div>
-                    <div class="columna columna-25 columna-mb-50 sin-padding">
-                        <div class="contenedor-cuadrado cont-rect"><img src="img/img7.jpg"><div class="contenido-cuadrado"><h2>Jardín</h2></div></div>
+                    <div class="columna columna-50 columna-mb-100 sin-padding">
+                        <div class="contenedor-cuadrado cont-rect"><img src="img/img7.jpg" ><div class="contenido-cuadrado"><h2>Jardinería y Exteriores</h2><a href="#" class="btn-circulo borde-blanco"><i class="fas fa-search"></i></a></div></div>
                     </div>
-                    <div class="columna columna-25 columna-mb-50 sin-padding">
-                        <div class="contenedor-cuadrado cont-rect"><img src="img/img8.jpg"><div class="contenido-cuadrado"><h2>Adhesivos</h2></div></div>
+                    <div class="columna columna-50 columna-mb-100 sin-padding">
+                        <div class="contenedor-cuadrado cont-rect"><img src="img/img8.jpg" ><div class="contenido-cuadrado"><h2>Adhesivos y Selladores</h2><a href="#" class="btn-circulo borde-blanco"><i class="fas fa-search"></i></a></div></div>
                     </div>
-                    <div class="columna columna-25 columna-mb-50 sin-padding">
-                        <div class="contenedor-cuadrado cont-rect"><img src="img/img9.jpg"><div class="contenido-cuadrado"><h2>Varios</h2></div></div>
+                    <div class="columna columna-50 columna-mb-100 sin-padding">
+                        <div class="contenedor-cuadrado cont-rect"><img src="img/img9.jpg" ><div class="contenido-cuadrado"><h2>Ferretería Menor</h2><a href="#" class="btn-circulo borde-blanco"><i class="fas fa-search"></i></a></div></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contador" class="seccion" style="background-color: #003366; color: white; padding: 70px 0;">
+        <section id="contador" class="seccion" style="background-color: #003366; color: white; padding: 50px 0;">
             <div class="container">
                 <div class="fila centrar-texto">
                     <div class="columna columna-33 columna-mb-100">
-                        <div class="contenedor-contador">
-                            <i class="fas fa-calendar-alt fa-3x" style="color: #FFD700; margin-bottom: 15px;"></i>
-                            <h2 class="numero" data-target="34" style="color: #FFD700; font-size: 4rem; font-weight: 700;">0</h2>
-                            <p style="font-weight: 600; text-transform: uppercase;">Años de Experiencia</p>
+                        <i class="fas fa-calendar-alt fa-3x" style="color: #FFD700;"></i>
+                        <h2 class="numero" data-target="34" style="color: #FFD700; font-size: 3rem;">0</h2>
+                        <p>Años de Experiencia</p>
+                    </div>
+                    <div class="columna columna-33 columna-mb-100">
+                        <i class="fas fa-users fa-3x" style="color: #FFD700;"></i>
+                        <h2 class="numero" data-target="15000" style="color: #FFD700; font-size: 3rem;">0</h2>
+                        <p>Clientes Felices</p>
+                    </div>
+                    <div class="columna columna-33 columna-mb-100">
+                        <i class="fas fa-box-open fa-3x" style="color: #FFD700;"></i>
+                        <h2 class="numero" data-target="5000" style="color: #FFD700; font-size: 3rem;">0</h2>
+                        <p>Productos Disponibles</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="seccion" style="background-color: #ffffff; color: #333;">
+            <div class="container">
+                <div class="fila fila-centrada">
+                    <div class="columna columna-100 centrar-texto">
+                        <h2 class="titulos wow slideInLeft" data-wow-duration="2s" style="color: #003366;">Servicios</h2>
+                    </div>
+                </div>
+                <div class="fila margin-arriba">
+                    <div class="columna columna-33 columna-mb-100">
+                        <div class="contenedor-serv">
+                            <i class="fas fa-motorcycle"></i>
+                            <h3>Delivery</h3>
+                            <p>Servicio rápido y confiable para que recibas tus productos en casa.</p>
                         </div>
                     </div>
                     <div class="columna columna-33 columna-mb-100">
-                        <div class="contenedor-contador">
-                            <i class="fas fa-users fa-3x" style="color: #FFD700; margin-bottom: 15px;"></i>
-                            <h2 class="numero" data-target="15000" style="color: #FFD700; font-size: 4rem; font-weight: 700;">0</h2>
-                            <p style="font-weight: 600; text-transform: uppercase;">Clientes Felices</p>
+                        <div class="contenedor-serv">
+                            <i class="fas fa-credit-card"></i>
+                            <h3>Tarjetas de crédito</h3>
+                            <p>Aceptamos QR, Visa, MasterCard, American Express y Diners Club.</p>
                         </div>
                     </div>
                     <div class="columna columna-33 columna-mb-100">
-                        <div class="contenedor-contador">
-                            <i class="fas fa-box-open fa-3x" style="color: #FFD700; margin-bottom: 15px;"></i>
-                            <h2 class="numero" data-target="5000" style="color: #FFD700; font-size: 4rem; font-weight: 700;">0</h2>
-                            <p style="font-weight: 600; text-transform: uppercase;">Productos Activos</p>
+                        <div class="contenedor-serv">
+                            <i class="far fa-clock"></i>
+                            <h3>Reservas</h3>
+                            <p>Asegura disponibilidad y evita esperas innecesarias con tu reserva.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="servicios" class="seccion" style="background-color: #ffffff; padding: 60px 0;">
+        <section id="testimonio" class="seccion">
+            <div class="trama-video"></div>
             <div class="container">
-                <div class="fila centrar-texto"><h2 class="titulos" style="color: #003366;">Nuestros Servicios</h2></div>
-                <div class="fila margin-arriba">
-                    <div class="columna columna-33 columna-mb-100">
-                        <div class="contenedor-serv" style="background: #f1f1f1; padding: 30px; border-radius: 12px; text-align: center;">
-                            <i class="fas fa-motorcycle fa-3x" style="color: #003366; margin-bottom: 15px;"></i>
-                            <h3 style="color: #003366;">Delivery Veloz</h3>
-                            <p style="color: #555;">Recibe tus materiales directamente en tu proyecto sin demoras.</p>
-                        </div>
+                <div class="fila fila-centrada">
+                    <div class="columna columna-50 columna-mb-100 centrar-texto">
+                        <h2 class="titulos wow slideInLeft" data-wow-duration="2s">Testimonio</h2>
                     </div>
-                    <div class="columna columna-33 columna-mb-100">
-                        <div class="contenedor-serv" style="background: #f1f1f1; padding: 30px; border-radius: 12px; text-align: center;">
-                            <i class="fas fa-credit-card fa-3x" style="color: #003366; margin-bottom: 15px;"></i>
-                            <h3 style="color: #003366;">Pagos Digitales</h3>
-                            <p style="color: #555;">Aceptamos QR, Tarjetas de Crédito y Débito de forma segura.</p>
-                        </div>
-                    </div>
-                    <div class="columna columna-33 columna-mb-100">
-                        <div class="contenedor-serv" style="background: #f1f1f1; padding: 30px; border-radius: 12px; text-align: center;">
-                            <i class="far fa-clock fa-3x" style="color: #003366; margin-bottom: 15px;"></i>
-                            <h3 style="color: #003366;">Atención</h3>
-                            <p style="color: #555;">Horarios amplios para que nunca te falte lo esencial en obra.</p>
+                </div>
+                <div class="fila fila-centrada">
+                    <div class="columna columna-50 columna-mb-100 centrar-texto">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item"><h3>Carlos S.</h3><p>"Siempre encuentro todo lo que necesito."</p></div>
+                            <div class="item"><h3>María L.</h3><p>"Atención al cliente excelente."</p></div>
                         </div>
                     </div>
                 </div>
@@ -198,51 +218,57 @@
     </main>
 
     <footer>
-        <div class="pie" style="background-color: #003366; color: white; padding: 40px 0;">
+        <div class="prefooter">
             <div class="container">
                 <div class="fila">
-                    <div class="columna columna-100 centrar-texto lista-redes">
-                        <a href="https://www.facebook.com/tddferreteriasupermercado/" style="color: white; margin: 0 10px;"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://wa.me/59177692950" style="color: white; margin: 0 10px;"><i class="fab fa-whatsapp"></i></a>
-                        <p>© Derechos Reservados 2026 - Ferretería SuperMercado</p>
+                    <div class="columna columna-100">
+                        <div class="mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.434440539162!2d-64.9065662239478!3d-14.829141098675605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93dd6fd6037f59ad%3A0x60037840139158c!2sFerreteria%20SuperMercado!5e0!3m2!1ses!2sbo!4v1700000000000!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pie">
+            <div class="container">
+                <div class="fila">
+                    <div class="columna columna-33 empujar-33 empujar-mb-0 columna-mb-100 orden lista-redes">
+                        <a href="https://www.facebook.com/tddferreteriasupermercado/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/FerreteriaSuperMercado" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/59177692950?tex=desdeweb" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.tiktok.com/@fersupermerc" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@FerreteriaSuperMercado" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="columna columna-33 columna-mb-100">
+                        ® Derechos Reservados 2026<br>
+                        <a href="https://wa.link/c6en1o" target="_blank">® JEDIs Web Solutions</a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
     <div class="logo-load"><img src="img/logo.png"></div>
     <div class="trama"></div>
-
     <script src="js/funciones.js"></script>
 
     <script>
-        function animateNumbers() {
+        // Animación del contador corregida
+        function startCounters() {
             $('.numero').each(function () {
                 var $this = $(this);
-                var target = parseInt($this.attr('data-target'));
-                $({ countNum: $this.text() }).animate({
-                    countNum: target
-                },
-                {
+                $({ countNum: $this.text() }).animate({ countNum: $this.attr('data-target') }, {
                     duration: 2000,
                     easing: 'swing',
-                    step: function () {
-                        $this.text(Math.ceil(this.countNum).toLocaleString());
-                    },
-                    complete: function () {
-                        $this.text(target.toLocaleString() + (target > 34 ? '+' : ''));
-                    }
+                    step: function () { $this.text(Math.ceil(this.countNum).toLocaleString()); },
+                    complete: function () { $this.text(this.countNum.toLocaleString() + ($this.attr('data-target') > 34 ? '+' : '')); }
                 });
             });
         }
-
-        var executed = false;
-        $(window).on('scroll', function() {
-            var counterTop = $('#contador').offset().top - window.innerHeight;
-            if (!executed && $(window).scrollTop() > counterTop) {
-                animateNumbers();
-                executed = true;
+        var viewed = false;
+        $(window).scroll(function() {
+            if ($('#contador').length && $(window).scrollTop() + $(window).height() > $('#contador').offset().top && !viewed) {
+                viewed = true;
+                startCounters();
             }
         });
     </script>
