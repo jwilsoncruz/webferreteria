@@ -27,6 +27,50 @@
     <script src="js/jquery.js"></script>
     <script src="libs/wow/wow.js"></script>
     <script src="libs/owl/owl.carousel.js"></script>
+{
+  "@context": "https://schema.org",
+  "@type": "HardwareStore",
+  "name": "Ferretería Supermercado",
+  "image": "https://www.ferreteriasupermercado.com/logo.jpg",
+  "@id": "https://www.ferreteriasupermercado.com",
+  "url": "https://www.ferreteriasupermercado.com",
+  "telephone": "+59177692950",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Panamericana, Zona Paititi",
+    "addressLocality": "Trinidad",
+    "addressRegion": "Beni",
+    "postalCode": "0591",
+    "addressCountry": "BO"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -14.826283,
+    "longitude": -64.880351
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "08:30",
+      "closes": "13:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/tddferreteriasupermercado/",
+    "https://www.instagram.com/ferreteriasupermercado/",
+    "https://www.youtube.com/@ferreteriasupermercado/",
+    "https://wa.me/59177692950"
+  ]
+}
+    
 </head>
 <body class="abierto">
     
@@ -124,46 +168,60 @@
             </div>
         </section>
 
-        <section id="lacarta" class="seccion" style="padding-top: 50px;">
-            <div class="container text-center">
-                <h2 class="titulos" style="color: #003366; margin-bottom: 30px;">Productos Destacados</h2>
-                <div class="fila margin-arriba">
-                    <div class="columna columna-50 columna-mb-100 sin-padding">
-                        <div class="contenedor-cuadrado">
-                            <img src="img/carpas.jpg" alt="Carpas de lona en Trinidad Beni">
-                            <div class="contenido-cuadrado">
-                                <span style="background: #d9534f; color: white; padding: 4px 12px; border-radius: 5px; font-weight: bold;">¡NUEVO STOCK!</span>
-                                <h2 style="color: #FFD700; margin-top: 10px;">CARPAS DE LONA</h2>
-                                <p>Reforzadas para la lluvia amazónica.</p>
-                                <a href="https://wa.me/59177692950?text=Wilson, quiero consultar sobre las carpas" class="btn boton-amarillo">CONSULTAR MEDIDAS</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="columna columna-50 columna-mb-100 sin-padding">
-                        <div class="contenedor-cuadrado">
-                            <img src="img/img1.jpg" alt="Materiales de Construcción SuperMercado">
-                            <div class="contenido-cuadrado">
-                                <h2>Construcción y Obras</h2>
-                                <p>Fierros, cemento y más.</p>
-                                <a href="https://wa.me/59177692950?text=Info sobre materiales de construcción" class="btn boton-amarillo">VER MÁS</a>
-                            </div>
-                        </div>
+       <section id="lacarta" class="seccion" style="background-color: #ffffff; padding: 50px 0;">
+    <div class="container text-center">
+        <h2 class="titulos" style="color: #003366; margin-bottom: 40px;">Nuestros Productos</h2>
+        
+        <div class="fila margin-arriba">
+            <div class="columna columna-50 columna-mb-100 sin-padding">
+                <div class="contenedor-cuadrado">
+                    <img src="img/carpas.jpg" alt="Carpas de lona reforzadas">
+                    <div class="contenido-cuadrado">
+                        <span style="background: #d9534f; color: white; padding: 2px 10px; border-radius: 5px; font-size: 0.8em; font-weight: bold;">¡NUEVO STOCK!</span>
+                        <h2 style="color: #003366; margin-top: 10px;">CARPAS DE LONA</h2>
+                        <p>Reforzadas y de todas las medidas. <br>¡Que la lluvia no lo sorprenda!</p>
+                        <a href="https://wa.me/59177692950?text=Hola!%20Me%20interesan%20las%20carpas" class="btn boton-amarillo">CONSULTAR MEDIDAS</a>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section id="local" style="padding: 60px 0; background: #f9f9f9;">
+            <div class="columna columna-50 columna-mb-100 sin-padding">
+                <div class="contenedor-cuadrado">
+                    <img src="img/img1.jpg" alt="Construcción">
+                    <div class="contenido-cuadrado">
+                        <h2 style="color: #003366;">Construcción y Obras</h2>
+                        <p>Todo lo que necesitás para tu obra.</p>
+                        <a href="https://wa.me/59177692950?text=Hola!%20Info%20sobre%20materiales" class="btn boton-amarillo">VER MÁS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="columna columna-25 columna-mb-50 sin-padding">
+                <div class="contenedor-cuadrado"><img src="img/img2.jpg"><div class="contenido-cuadrado"><h2>Herramientas</h2></div></div>
+            </div>
+            <div class="columna columna-25 columna-mb-50 sin-padding">
+                <div class="contenedor-cuadrado"><img src="img/img3.jpg"><div class="contenido-cuadrado"><h2>Pinturas</h2></div></div>
+            </div>
+            <div class="columna columna-25 columna-mb-50 sin-padding">
+                <div class="contenedor-cuadrado"><img src="img/img4.jpg"><div class="contenido-cuadrado"><h2>Sanitarios</h2></div></div>
+            </div>
+            <div class="columna columna-25 columna-mb-50 sin-padding">
+                <div class="contenedor-cuadrado"><img src="img/img5.jpg"><div class="contenido-cuadrado"><h2>Electricidad</h2></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="local" style="padding: 60px 0; background-color: #f9f9f9;">
     <div class="container text-center">
         <h2 class="titulos" style="color: #003366; margin-bottom: 10px;">Visitanos en Trinidad</h2>
-        <p style="font-size: 1.1em; color: #444; margin-bottom: 25px;">
-            <i class="fas fa-map-marker-alt" style="color: #d9534f;"></i> 
-            Av. Panamericana, Zona Paitití (536W+XGW)
-        </p>
+        <p style="margin-bottom: 25px;"><i class="fas fa-map-marker-alt" style="color: #d9534f;"></i> Av. Panamericana, Zona Paitití</p>
         
-        <div class="mapa" style="border: 5px solid #003366; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+        <div class="mapa" style="border: 5px solid #003366; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.1);">
             <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15442.8711311051!2d-64.9123864!3d-14.8344583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93ddf88bf539e3d1%3A0x3a5d28941b34dd4b!2sFerreter%C3%ADa%20Supermercado!5e0!3m2!1ses!2sbo!4v1704380000000!5m2!1ses!2sbo" 
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3868.5144670000003!2d-64.8803514!3d-14.826283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTTCsDQ5JzM0LjYiUyA2NMKwNTInNDkuMyJX!5e0!3m2!1ses!2sbo!4v1704385000000!5m2!1ses!2sbo" 
                 width="100%" 
                 height="450" 
                 style="border:0;" 
@@ -174,10 +232,10 @@
         </div>
         
         <div style="margin-top: 20px;">
-            <a href="https://maps.google.com/?q=-14.8344583,-64.9123864" 
+            <a href="https://www.google.com/maps/dir/?api=1&destination=-14.826283,-64.8803514" 
                target="_blank" 
-               style="background: #003366; color: #FFD700; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; box-shadow: 0 4px 15px rgba(0,51,102,0.3);">
-                <i class="fas fa-directions"></i> CÓMO LLEGAR (GOOGLE MAPS)
+               style="background-color: #003366; color: #FFD700; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block;">
+               <i class="fas fa-location-arrow"></i> ¿CÓMO LLEGAR? (GPS)
             </a>
         </div>
     </div>
@@ -192,6 +250,8 @@
                         <a href="https://www.facebook.com/tddferreteriasupermercado/" target="_blank" style="color: white; font-size: 25px; margin: 0 15px;"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://wa.me/59177692950" target="_blank" style="color: white; font-size: 25px; margin: 0 15px;"><i class="fab fa-whatsapp"></i></a>
                         <a href="https://www.tiktok.com/@fersupermerc" target="_blank" style="color: white; font-size: 25px; margin: 0 15px;"><i class="fab fa-tiktok"></i></a>
+                   <a href="https://www.instagram.com/ferreteriasupermercado/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@ferreteriasupermercado/" target="_blank"><i class="fab fa-youtube"></i></a>
                     </div>
                     <div class="columna columna-100">
                         <p>© 2026 Ferretería SuperMercado - Trinidad, Beni</p>
