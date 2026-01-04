@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>WiFi Gratis + Regalo de Cumpleaños</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Regístrate y recibe un regalo especial el día de tu cumpleaños">
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
+    .container {
+      max-width: 420px;
+      margin: auto;
+      background: #fff;
+      padding: 25px;
+      margin-top: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #0b3c68;
+      font-size: 24px;
+    }
+    p {
+      text-align: center;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+    label {
+      font-size: 14px;
+      display: block;
+      margin-top: 15px;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+    .checkbox {
+      margin-top: 15px;
+      font-size: 13px;
+    }
+    .checkbox input {
+      width: auto;
+    }
+    button {
+      width: 100%;
+      padding: 14px;
+      background: #0b3c68;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #062946;
+    }
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>🎁 Regalo de Cumpleaños</h1>
+    <p>
+      Conéctate a nuestro WiFi y recibe un  
+      <strong>descuento exclusivo</strong> el día de tu cumpleaños 🎂
+    </p>
+
+    <form id="registroForm">
+      <label>Nombre</label>
+      <input type="text" id="nombre" required placeholder="Tu nombre">
+
+      <label>WhatsApp</label>
+      <input type="tel" id="whatsapp" required placeholder="Ej: 68972863">
+
+      <label>Fecha de cumpleaños</label>
+      <input type="date" id="cumple" required>
+
+      <div class="checkbox">
+        <input type="checkbox" id="acepto" required>
+        Acepto recibir mensajes promocionales por WhatsApp
+      </div>
+
+      <button type="submit">🎁 RECIBIR MI REGALO</button>
+    </form>
+
+    <div class="footer">
+      Tus datos están seguros. No enviamos spam.
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("registroForm").addEventListener("submit", function(e){
+      e.preventDefault();
+
+      const nombre = document.getElementById("nombre").value;
+      const whatsapp = document.getElementById("whatsapp").value;
+      const cumple = document.getElementById("cumple").value;
+
+      // 👉 AQUÍ VA LA INTEGRACIÓN PRO
+      // 1. Enviar a Google Sheets / CRM / API
+      // 2. Disparar WhatsApp API
+
+      alert("🎉 ¡Gracias " + nombre + "! Tu regalo será enviado por WhatsApp.");
+
+      // OPCIÓN TEMPORAL: abrir WhatsApp
+      const mensaje = `Hola, ya me registré para el regalo de cumpleaños 🎂%0ANombre: ${nombre}%0ACumpleaños: ${cumple}`;
+      window.location.href = `https://wa.me/591${whatsapp}?text=${mensaje}`;
+    });
+  </script>
+
+</body>
+</html>
