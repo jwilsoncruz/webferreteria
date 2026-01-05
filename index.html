@@ -15,7 +15,8 @@
         "streetAddress": "Av. Panamericana, Zona Paititi",
         "addressLocality": "Trinidad",
         "addressCountry": "BO"
-      }
+      },
+      "telephone": "+59177692950"
     }
     </script>
 
@@ -52,13 +53,13 @@
     </header>
 
     <main>
-        <section id="banner" style="background-image: url('img/banner.jpg'); background-size: cover; background-position: center; min-height: 600px; display: flex; align-items: center;">
+        <section id="banner" style="background-image: url('img/banner.jpg'); background-size: cover; background-position: center; min-height: 500px; display: flex; align-items: center;">
             <div class="container">
                 <div class="fila">
                     <div class="columna columna-50 columna-mb-100">
                         <h1 class="wow slideInLeft" data-wow-duration="1.5s" style="color: #FFD700; text-shadow: 2px 2px 4px #000;">Ferretería SuperMercado</h1>
-                        <p class="wow slideInLeft" data-wow-duration="1.5s" style="color: white; font-weight: bold; text-shadow: 1px 1px 3px #000;">34 años de firmeza y confianza en el corazón del Beni.</p>
-                        <a href="#lacarta" class="btn" style="background-color: #FFD700; color: #003366; font-weight: bold; padding: 15px 30px; border-radius: 5px; text-decoration: none;">VER PRODUCTOS</a>
+                        <p class="wow slideInLeft" data-wow-duration="1.5s" style="color: white; font-weight: bold; text-shadow: 1px 1px 3px #000;">34 años de firmeza y confianza en el Beni.</p>
+                        <a href="#lacarta" class="btn" style="background-color: #FFD700; color: #003366; font-weight: bold; padding: 12px 25px; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 15px;">VER PRODUCTOS</a>
                     </div>
                 </div>
             </div>
@@ -70,13 +71,32 @@
             </div>
         </section>
 
+        <section id="wifi" style="background-color: #f1f1f1; padding: 40px 0; border-left: 8px solid #003366;">
+            <div class="container">
+                <div class="fila">
+                    <div class="columna columna-50 columna-mb-100">
+                        <h3 style="color: #003366;"><i class="fas fa-wifi"></i> WiFi Gratis + ¡Regalo de Cumpleaños!</h3>
+                        <p>Dejanos tu fecha de cumple y recibí un regalo especial vía WhatsApp. 🎁</p>
+                    </div>
+                    <div class="columna columna-50 columna-mb-100">
+                        <form action="registro_wifi.php" method="POST" style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                            <input type="text" name="nombre" placeholder="Nombre completo" required style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc;">
+                            <input type="tel" name="whatsapp" placeholder="WhatsApp (776XXXXX)" required style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc;">
+                            <input type="date" name="cumple" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc;">
+                            <button type="submit" style="width: 100%; background: #003366; color: white; padding: 12px; border: none; font-weight: bold; cursor: pointer; border-radius: 5px;">CONECTAR Y RECIBIR REGALO</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="lacarta" class="seccion" style="background-color: #003366; padding: 60px 0;">
             <div class="container text-center">
                 <h2 class="titulos" style="color: #FFD700; margin-bottom: 40px;">Nuestros Productos</h2>
                 <div class="fila">
                     <div class="columna columna-50 columna-mb-100 sin-padding">
                         <div class="contenedor-cuadrado">
-                            <img src="img/carpas.jpg" alt="Carpas de lona">
+                            <img src="img/carpas.jpg">
                             <div class="contenido-cuadrado">
                                 <h2 style="color: #FFD700; text-shadow: 3px 3px 6px #000;">CARPAS DE LONA</h2>
                                 <a href="https://wa.me/59177692950?text=Hola!%20Info%20Carpas" class="btn" style="background-color: #FFD700; color: #003366; font-weight: bold;">CONSULTAR MEDIDAS</a>
@@ -96,18 +116,46 @@
             </div>
         </section>
 
-        <footer style="background-color: #001a33; padding: 40px 0; color: white;">
+        <section id="servicios" style="padding: 60px 0; background-color: #ffffff;">
             <div class="container text-center">
-                <div class="lista-redes" style="margin-bottom: 20px;">
-                    <a href="https://www.facebook.com/tddferreteriasupermercado/" target="_blank" style="color: #FFD700; font-size: 30px; margin: 0 15px;"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://wa.me/59177692950" target="_blank" style="color: #FFD700; font-size: 30px; margin: 0 15px;"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.tiktok.com/@fersupermerc" target="_blank" style="color: #FFD700; font-size: 30px; margin: 0 15px;"><i class="fab fa-tiktok"></i></a>
+                <h2 class="titulos" style="color: #003366;">Nuestros Servicios</h2>
+                <div class="fila margin-arriba">
+                    <div class="columna columna-33 columna-mb-100 wow fadeInUp" data-wow-delay="0.2s">
+                        <i class="fas fa-truck fa-4x" style="color: #003366; margin-bottom: 20px;"></i>
+                        <h4 style="font-weight: bold; color: #003366;">Envíos a Domicilio</h4>
+                    </div>
+                    <div class="columna columna-33 columna-mb-100 wow fadeInUp" data-wow-delay="0.4s">
+                        <i class="fas fa-calculator fa-4x" style="color: #003366; margin-bottom: 20px;"></i>
+                        <h4 style="font-weight: bold; color: #003366;">Presupuestos</h4>
+                    </div>
+                    <div class="columna columna-33 columna-mb-100 wow fadeInUp" data-wow-delay="0.6s">
+                        <i class="fas fa-tools fa-4x" style="color: #003366; margin-bottom: 20px;"></i>
+                        <h4 style="font-weight: bold; color: #003366;">Asesoría Técnica</h4>
+                    </div>
                 </div>
-                <p>© 2026 Ferretería SuperMercado - Trinidad, Beni</p>
-                <a href="https://wa.link/c6en1o" target="_blank" style="color: #FFD700; text-decoration: none;">Desarrollo: JEDIs Web Solutions</a>
             </div>
-        </footer>
+        </section>
+
+        <section id="local" style="padding: 60px 0; background-color: #f9f9f9;">
+            <div class="container text-center">
+                <h2 class="titulos" style="color: #003366;">Visitanos</h2>
+                <div class="mapa" style="border: 5px solid #003366; border-radius: 15px; overflow: hidden;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3882.5!2d-64.8!3d-14.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDQ5JzM0LjYiUyA2NMKwNDgnNDkuMiJX!5e0!3m2!1ses!2sbo!4v123456789" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer style="background-color: #001a33; padding: 40px 0; color: white;">
+        <div class="container text-center">
+            <div class="lista-redes" style="margin-bottom: 20px;">
+                <a href="https://facebook.com" target="_blank" style="color: #FFD700; font-size: 30px; margin: 0 15px;"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/59177692950" target="_blank" style="color: #FFD700; font-size: 30px; margin: 0 15px;"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://tiktok.com" target="_blank" style="color: #FFD700; font-size: 30px; margin: 0 15px;"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p>© 2026 Ferretería SuperMercado - Trinidad, Beni</p>
+        </div>
+    </footer>
 
     <script src="js/funciones.js"></script>
     <script>
