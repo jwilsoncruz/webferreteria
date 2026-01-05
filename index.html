@@ -32,6 +32,37 @@
     <script src="js/jquery.js"></script>
     <script src="libs/wow/wow.js"></script>
     <script src="libs/owl/owl.carousel.js"></script>
+    <header class="cabecera" style="background-color: #003366; position: relative; z-index: 1000; padding: 10px 0;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+        <a href="index.html" class="link-logo">
+            <img class="logo" src="img/logo.png" width="80" height="80" alt="Ferretería SuperMercado" style="height: auto; max-width: 100%;">
+        </a>
+        
+        <nav class="menu">
+            <a href="#lacarta" style="color: white;">Productos</a>
+            <a href="#servicios" style="color: white;">Servicios</a> 
+            <a href="#local" style="color: white;">Local</a> 
+            <a href="intranet.html" target="_blank" style="color: #FFD700;"><i class="fas fa-lock"></i> Intranet</a>
+        </nav>
+
+        <a href="javascript:void(0);" class="hamb" style="color: white; font-size: 25px; padding-right: 15px;"><i class="fas fa-bars"></i></a>
+    </div>
+</header>
+
+<script>
+    // Script para que el menú móvil no falle
+    $(document).ready(function(){
+        $('.hamb').click(function(){
+            $('.menu').toggleClass('open'); // Asegurate que style.css tenga .menu.open { display: block; }
+            $('body').toggleClass('no-scroll');
+        });
+        
+        // Cerrar menú al hacer clic en un link
+        $('.menu a').click(function(){
+            $('.menu').removeClass('open');
+        });
+    });
+</script>
 </head>
 <body class="abierto">
     
