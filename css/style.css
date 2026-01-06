@@ -369,4 +369,32 @@ footer .pie .lista-redes a{margin-left:1rem;margin-right:1rem;font-size:1.5rem;}
 	transform: translateY(-50%);
 }
 }
+/* ==== SOLUCIÓN BOTONES WHATSAPP EN PRODUCTOS ==== */
+.contenedor-cuadrado {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.contenedor-cuadrado img {
+    z-index: 1;           /* Imagen detrás de todo */
+    pointer-events: none;  /* Imagen no bloquea clics */
+}
+
+.contenedor-cuadrado .contenido-cuadrado {
+    z-index: 2;            /* Contenido encima */
+    pointer-events: auto;  /* Clickeable */
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.contenedor-cuadrado .contenido-cuadrado a.btn {
+    z-index: 3;            /* Botón encima de todo */
+    pointer-events: auto;  /* Botón clickeable */
+}
+
 
