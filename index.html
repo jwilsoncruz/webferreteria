@@ -1,257 +1,331 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Ferretería SuperMercado | Construcción y Herramientas en Trinidad, Beni</title>
-    <meta name="description" content="La ferretería más confiable de Trinidad, Beni. 34 años de experiencia. Gran liquidación hasta el 6 de enero. Materiales de construcción, herramientas y pinturas.">
-    <meta name="keywords" content="ferreteria trinidad beni, materiales de construccion trinidad, herramientas trinidad, barraca trinidad beni, super mercado ferreteria">
-    <meta name="author" content="Wilson Cruz - JEDIs Web Solutions">
-    <link rel="canonical" href="https://jwilsoncruz.github.io/webferreteria/">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ferretería SuperMercado | Materiales de construcción en Beni</title>
+	<meta name="description" content="Ferretería SuperMercado, 33 años junto a ti. Construcción, pinturas, fontanería, electricidad y más en Beni, Bolivia.">
+	<meta name="keywords" content="ferretería beni, ferretería trinidad, construcción, pinturas, fontanería, electricidad">
+	<meta name="author" content="Wilson Cruz">
+	<meta name="theme-color" content="#f5b800">
 
-    <meta property="og:title" content="Ferretería SuperMercado - 34 años en el Beni">
-    <meta property="og:description" content="¡Gran Liquidación hasta el 6 de enero! Encontrá todo para tu obra en Trinidad.">
-    <meta property="og:image" content="https://jwilsoncruz.github.io/webferreteria/Preview.jpg">
-    <meta property="og:type" content="website">
+	<!-- Redes sociales (al compartir el enlace en WhatsApp/Facebook) -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Ferretería SuperMercado - 33 años junto a ti">
+	<meta property="og:description" content="Los mejores productos de calidad para tus proyectos de construcción y renovación.">
+	<meta property="og:image" content="img/imagen2.jpg">
+	<meta property="og:locale" content="es_BO">
 
-    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalice.css">
-    <link rel="stylesheet" href="libs/wow/animate.css">
-    <link rel="stylesheet" href="libs/owl/owl.carousel.css">
-    <link rel="stylesheet" href="libs/owl/owl.theme.default.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/icono.png">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	<link rel="shortcut icon" href="img/icono.png">
 
-    <script src="js/jquery.js"></script>
-    <script src="libs/wow/wow.js"></script>
-    <script src="libs/owl/owl.carousel.js"></script>
+	<!-- Carga de fuentes más rápida -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/normalice.css">
+	<link rel="stylesheet" href="libs/wow/animate.css">
+	<link rel="stylesheet" href="libs/owl/owl.carousel.css">
+	<link rel="stylesheet" href="libs/owl/owl.theme.default.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Scripts con defer: la página se muestra sin esperar a que carguen -->
+	<script src="https://kit.fontawesome.com/37ef4fca07.js" crossorigin="anonymous" defer></script>
+	<script src="js/jquery.js" defer></script>
+	<script src="js/jquery-ui.js" defer></script>
+	<script src="libs/wow/wow.js" defer></script>
+	<script src="libs/owl/owl.carousel.js" defer></script>
+	<script src="js/funciones.js" defer></script>
+	<!-- jquery-validation solo se necesita en contacto.html, ahí debe cargarse -->
 </head>
 <body class="abierto">
-    
-    <header class="cabecera">
-        <div class="container">
-            <a href="index.html" class="link-logo">
-                <img class="logo" src="img/logo.png" width="138" height="140" alt="Ferretería SuperMercado Trinidad">
-            </a>
-            <nav class="menu">
-                <a href="index.html#lacarta">Productos</a>
-                <a href="index.html#local">Local</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="intranet.html" target="_blank">Intranet</a>
-            </nav>
-            <a href="#" class="hamb"><i class="fas fa-bars"></i></a>
-        </div>
-       
-    </header>
+	<header class="cabecera">
+		<div class="container">
+			<a href="index.html" class="link-logo" aria-label="Ir al inicio">
+				<img class="logo" src="img/logo.png" width="138" height="140" alt="Logo Ferretería SuperMercado">
+			</a>
+			<nav class="menu" aria-label="Menú principal">
+				<a href="index.html#lacarta">Productos</a>
+				<a href="index.html#local">Local</a>
+				<a href="index.html#servicios">Servicios</a>
+				<a href="nosotros.html">Nosotros</a>
+				<a href="contacto.html">Contacto</a>
+				<a href="intranet.html" target="_blank" rel="noopener">Intranet</a>
+			</nav>
+			<a href="#" class="hamb" aria-label="Abrir menú"><i class="fas fa-bars" aria-hidden="true"></i></a>
+		</div>
+	</header>
 
-    <main>
-        <section id="banner">
-            <picture>
-                <source media="(max-width: 767px)" srcset="img/banner.jpg">
-                <img class="banner-home" src="img/banner.jpg" alt="Ferretería en Trinidad Beni">
-            </picture>
-            <div class="container">
-                <div class="fila">
-                    <div class="columna columna-50 columna-mb-100">
-                        <h1 class="wow slideInLeft" data-wow-duration="1.5s">Ferretería SuperMercado</h1>
-                        <p class="wow slideInLeft" data-wow-duration="1.5s">34 años de firmeza y confianza en el corazón del Beni.</p>
-                        <a href="#lacarta" class="btn boton-transparente wow slideInLeft">VER PRODUCTOS</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+	<main>
+		<section id="banner">
+			<picture>
+				<source media="(max-width: 767px)" srcset="img/imagen3.jpg">
+				<source media="(max-width: 991px)" srcset="img/imagen4.jpg"><!-- antes decía "imagaen4.jpg" (error) -->
+				<img class="banner-home" src="img/imagen2.jpg" width="1880" height="1245" alt="Ferretería SuperMercado" fetchpriority="high">
+			</picture>
+			<div class="container">
+				<div class="fila">
+					<div class="columna columna-50 columna-mb-100">
+						<h1 class="wow slideInLeft" data-wow-duration="2s">Ferretería SuperMercado</h1>
+						<p class="wow slideInLeft" data-wow-duration="2s">Los mejores productos de calidad para sus proyectos de construcción y renovación.</p>
+						<a href="#lacarta" class="btn boton-transparente wow slideInLeft" data-wow-duration="2s">Ver productos</a>
+					</div>
+				</div>
+			</div>
+			<a href="#lacarta" class="saltarina" aria-label="Bajar a productos"><i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+		</section>
 
-        <section id="bloque-liquidacion" class="wow pulse" data-wow-iteration="infinite" data-wow-duration="2s" style="background-color: #FFD700; padding: 15px 0; border-bottom: 4px solid #003366; text-align: center;">
-            <div class="container">
-                <h2 style="color: #003366; margin: 0; font-size: 1.6rem; font-weight: 800;">🔥 ¡NUEVO PRODUCTO INGRESADO HASTA EL 31 DE ENERO! 🔥</h2>
-                <p style="color: #003366; margin: 5px 0; font-weight: bold;">¡Aprovechá las Carpa de lona reforzada desde 2x20 hasta 6x6 metros</p>
-                <a href="https://wa.me/59177692950?text=Hola!%20Quiero%20consultar%20las%20carpas%20en%20recien%20llegadas" style="background: #003366; color: #FFD700; padding: 8px 25px; border-radius: 20px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">CONSULTAR POR WHATSAPP</a>
-            </div>
-        </section>
+		<section id="lacarta" class="seccion">
+			<div class="container">
+				<div class="fila">
+					<div class="columna columna-100 centrar-texto">
+						<h2 class="titulos wow slideInLeft" data-wow-duration="2s">Nuestros Productos</h2>
+					</div>
+				</div>
+				<div class="fila margin-arriba columna">
+					<div class="columna columna-50 columna-mb-100 sin-padding orden">
+						<div class="contenedor-cuadrado">
+							<img src="img/imagen1.jpg" alt="Construcción y obras" loading="lazy">
+							<div class="contenido-cuadrado">
+								<h3>Construcción y Obras</h3>
+								<a href="#" class="btn boton-amarillo">Ver más</a>
+							</div>
+						</div>
+					</div>
+					<div class="columna columna-50 columna-mb-100">
+						<div class="fila">
+							<div class="columna columna-50 columna-mb-100 sin-padding">
+								<div class="contenedor-cuadrado">
+									<img src="img/imagen3.jpg" alt="Ferretería general" loading="lazy">
+									<div class="contenido-cuadrado">
+										<h3>Ferretería General</h3>
+										<a href="#" class="btn boton-amarillo">Ver más</a>
+									</div>
+								</div>
+							</div>
+							<div class="columna columna-50 columna-mb-100 sin-padding">
+								<div class="contenedor-cuadrado">
+									<img src="img/imagen4.jpg" alt="Pinturas y acabados" loading="lazy">
+									<div class="contenido-cuadrado">
+										<h3>Pinturas y Acabados</h3>
+										<a href="#" class="btn boton-amarillo">Ver más</a>
+									</div>
+								</div>
+							</div>
+							<div class="columna columna-50 columna-mb-100 sin-padding">
+								<div class="contenedor-cuadrado">
+									<img src="img/imagen5.jpg" alt="Fontanería y sanitarios" loading="lazy">
+									<div class="contenido-cuadrado">
+										<h3>Fontanería y Sanitarios</h3>
+										<a href="#" class="btn boton-amarillo">Ver más</a>
+									</div>
+								</div>
+							</div>
+							<div class="columna columna-50 columna-mb-100 sin-padding">
+								<div class="contenedor-cuadrado">
+									<img src="img/imagen6.jpg" alt="Electricidad e iluminación" loading="lazy">
+									<div class="contenido-cuadrado">
+										<h3>Electricidad e Iluminación</h3>
+										<a href="#" class="btn boton-amarillo">Ver más</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
- <!--       <section id="wifi-regalo" style="background-color: #f1f1f1; padding: 40px 0; border-left: 8px solid #003366;">
-            <div class="container text-center">
-                <h3 style="color: #003366;"><i class="fas fa-wifi"></i> WiFi Gratis + ¡Regalo de Cumpleaños!</h3>
-                <p>Registrate al conectar nuestro WiFi, dejanos tu cumple y <strong>¡recibí un descuento especial!</strong></p>
-                <small style="display: block; margin-bottom: 15px; color: #666;">(Usamos tu fecha para enviarte un regalo especial vía WhatsApp)</small>
-                <a href="#contacto" class="btn" style="background-color: #003366; color: white; padding: 10px 25px; border-radius: 5px; text-decoration: none;">SABER MÁS</a>
-            </div>
-        </section>  
---->
-        <section id="servicios" class="py-5" style="padding: 60px 0; background: #fff;">
-            <div class="container">
-                <div class="fila text-center">
-                    <div class="columna columna-100">
-                        <h2 class="titulos" style="color: #003366;">Nuestros Servicios</h2>
-                    </div>
-                </div>
-                <div class="fila margin-arriba">
-                    <div class="columna columna-33 columna-mb-100 text-center">
-                        <i class="fas fa-truck fa-3x text-primary mb-3"></i>
-                        <h4>Envíos a Obra</h4>
-                        <p>Llegamos a cada rincón de Trinidad con materiales pesados.</p>
-                    </div>
-                    <div class="columna columna-33 columna-mb-100 text-center">
-                        <i class="fas fa-calculator fa-3x text-primary mb-3"></i>
-                        <h4>Presupuestos</h4>
-                        <p>Cotizamos tus planos de construcción en el día y sin costo.</p>
-                    </div>
-                    <div class="columna columna-33 columna-mb-100 text-center">
-                        <i class="fas fa-tools fa-3x text-primary mb-3"></i>
-                        <h4>Asesoría</h4>
-                        <p>34 años de experiencia nos respaldan para guiarte mejor.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+		<section id="local" class="seccion">
+			<div class="container-full">
+				<div class="fila fila-centrada">
+					<div class="columna columna-50 columna-mb-100 centrar-texto">
+						<h2 class="titulos wow slideInLeft" data-wow-duration="2s">Nuestro Local</h2>
+						<!-- Antes había una <section> con <h1> dentro de un <p>: HTML inválido. Ahora es un <div>. -->
+						<div class="texto-local">
+							<h3>Bienvenidos a nuestra ferretería</h3>
+							<p>Ubicada en un lugar estratégico de la ciudad, nuestra ferretería es un punto de referencia para quienes buscan productos de calidad y un servicio excepcional. Nuestro amplio local está pensado para que comprar sea cómodo y eficiente.</p>
 
-        <section id="contador" style="background: #003366; color: white; padding: 50px 0;">
-            <div class="container">
-                <div class="fila text-center">
-                    <div class="columna columna-33">
-                        <h2 class="numero" data-target="34" style="font-size: 3rem; font-weight: bold; color: #FFD700;">0</h2>
-                        <p>Años de Firmeza</p>
-                    </div>
-                    <div class="columna columna-33">
-                        <h2 class="numero" data-target="15000" style="font-size: 3rem; font-weight: bold; color: #FFD700;">0</h2>
-                        <p>Clientes Satisfechos</p>
-                    </div>
-                    <div class="columna columna-33">
-                        <h2 class="numero" data-target="500" style="font-size: 3rem; font-weight: bold; color: #FFD700;">0</h2>
-                        <p>Marcas Líderes</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-<!--- sesion productos - ferreteria Supermercado Trinidad, Beni ---->
-        <section id="lacarta" class="seccion" style="padding-top: 50px;">
-    <div class="container text-center">
-        <h2 class="titulos" style="color: #003366; margin-bottom: 30px;">Productos Destacados</h2>
-        <div class="fila margin-arriba">
+							<h3>Amplia variedad de productos</h3>
+							<p>Contamos con una extensa gama de productos para construcción, reparación y mantenimiento: desde herramientas manuales y eléctricas hasta materiales de construcción y artículos de jardinería.</p>
 
-            <!-- Producto 1 -->
-            <div class="columna columna-50 columna-mb-100 sin-padding">
-                <div class="contenedor-cuadrado">
-                    <img src="img/carpas.jpg" alt="Carpas de lona en Trinidad Beni">
-                    <div class="contenido-cuadrado">
-                        <span>¡NUEVO STOCK!</span>
-                        <h2 style="color: #FFD700;">CARPAS DE LONA</h2>
-                        <p>Reforzadas para la lluvia amazónica.</p>
-                        <a href="https://wa.me/59177692950?text=Hola%20Fernando%20quiero%20consultar%20sobre%20las%20carpas" class="btn boton-amarillo" target="_blank">CONSULTAR MEDIDAS</a>
-                    </div>
-                </div>
-            </div>
+							<h3>Espacios bien organizados</h3>
+							<p>El local está dividido en secciones claramente señalizadas para que encuentres lo que buscas sin complicaciones.</p>
+							<ul>
+								<li><strong>Construcción y Obras</strong>: todo lo necesario para tus proyectos.</li>
+								<li><strong>Ferretería General</strong>: herramientas y suministros para cualquier tarea.</li>
+								<li><strong>Fontanería y Sanitarios</strong>: soluciones completas para baño y cocina.</li>
+								<li><strong>Electricidad e Iluminación</strong>: productos para iluminar y electrificar tu hogar.</li>
+								<li><strong>Pinturas y Acabados</strong>: el toque final de tus proyectos.</li>
+								<li><strong>Seguridad y Protección</strong>: equipo para trabajar seguro.</li>
+								<li><strong>Jardinería y Exteriores</strong>: todo para mantener tu jardín.</li>
+								<li><strong>Adhesivos y Selladores</strong>: para unir y sellar de manera efectiva.</li>
+								<li><strong>Ferretería Menor y Miscelánea</strong>: pequeños artículos que marcan la diferencia.</li>
+							</ul>
 
-            <!-- Producto 2 -->
-            <div class="columna columna-50 columna-mb-100 sin-padding">
-                <div class="contenedor-cuadrado">
-                    <img src="img/img1.jpg" alt="Materiales de Construcción SuperMercado">
-                    <div class="contenido-cuadrado">
-                        <h2 style="color: #FFD700;">CONSTRUCCIÓN Y OBRAS</h2>
-                        <p>Fierros, cemento y más.</p>
-                        <a href="https://wa.me/59177692950?text=Hola%20Fernando%20quiero%20info%20sobre%20materiales" class="btn boton-amarillo" target="_blank">VER MÁS</a>
-                    </div>
-                </div>
-            </div>
+							<h3>Atención personalizada</h3>
+							<p>Nuestro equipo está siempre disponible para ayudarte, ya sea con asesoramiento técnico o para elegir el producto adecuado.</p>
+						</div>
+					</div>
+				</div>
+				<div class="fila margin-arriba">
+					<div class="columna columna-50 columna-mb-100 sin-padding">
+						<div class="contenedor-cuadrado cont-rect">
+							<img src="img/rest1.jpg" alt="Sección de pinturas y acabados" loading="lazy">
+							<div class="contenido-cuadrado">
+								<h3>Pinturas y Acabados</h3>
+								<a href="#" class="btn-circulo borde-blanco" aria-label="Ver Pinturas y Acabados"><i class="fas fa-search" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="columna columna-50 columna-mb-100 sin-padding">
+						<div class="contenedor-cuadrado cont-rect">
+							<img src="img/rest2.jpg" alt="Sección de jardinería y exteriores" loading="lazy">
+							<div class="contenido-cuadrado">
+								<h3>Jardinería y Exteriores</h3>
+								<a href="#" class="btn-circulo borde-blanco" aria-label="Ver Jardinería y Exteriores"><i class="fas fa-search" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="columna columna-50 columna-mb-100 sin-padding">
+						<div class="contenedor-cuadrado cont-rect">
+							<img src="img/rest3.jpg" alt="Sección de adhesivos y selladores" loading="lazy">
+							<div class="contenido-cuadrado">
+								<h3>Adhesivos y Selladores</h3>
+								<a href="#" class="btn-circulo borde-blanco" aria-label="Ver Adhesivos y Selladores"><i class="fas fa-search" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="columna columna-50 columna-mb-100 sin-padding">
+						<div class="contenedor-cuadrado cont-rect">
+							<img src="img/rest4.jpg" alt="Sección de ferretería menor y miscelánea" loading="lazy">
+							<div class="contenido-cuadrado">
+								<h3>Ferretería Menor y Miscelánea</h3>
+								<a href="#" class="btn-circulo borde-blanco" aria-label="Ver Ferretería Menor y Miscelánea"><i class="fas fa-search" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-            <!-- Producto 3 -->
-            <div class="columna columna-50 columna-mb-100 sin-padding">
-                <div class="contenedor-cuadrado">
-                    <img src="img/img5.jpg" alt="Fontanería y Sanitarios">
-                    <div class="contenido-cuadrado">
-                        <h2 style="color: #FFD700;">FONTANERÍA Y SANITARIOS</h2>
-                        <a href="https://wa.me/59177692950?text=Hola%20Fernando%20quiero%20info%20sobre%20materiales" class="btn boton-amarillo" target="_blank">VER MÁS</a>
-                    </div>
-                </div>
-            </div>
+		<section id="servicios" class="seccion">
+			<div class="container">
+				<div class="fila fila-centrada">
+					<div class="columna columna-100 centrar-texto">
+						<h2 class="titulos wow slideInLeft" data-wow-duration="2s">Servicios</h2>
+					</div>
+				</div>
+				<div class="fila margin-arriba">
+					<div class="columna columna-33 columna-mb-100">
+						<div class="contenedor-serv">
+							<i class="fas fa-motorcycle" aria-hidden="true"></i>
+							<h3>Delivery</h3>
+							<p>Servicio de delivery rápido y confiable: recibe tus productos en la puerta de tu casa. Cubrimos toda la ciudad y áreas cercanas.</p>
+							<p>Haz tu pedido en línea o por teléfono y recibirás una confirmación con el tiempo estimado de entrega.</p>
+						</div>
+					</div>
+					<div class="columna columna-33 columna-mb-100">
+						<div class="contenedor-serv">
+							<i class="fas fa-credit-card" aria-hidden="true"></i>
+							<h3>Tarjetas de crédito</h3>
+							<p>Aceptamos varias tarjetas para facilitar tus compras, de forma segura y conveniente en todos nuestros puntos de venta.</p>
+							<p>Tarjetas aceptadas:</p>
+							<ul>
+								<li>Visa</li>
+								<li>MasterCard</li>
+								<li>American Express</li>
+								<li>Diners Club</li>
+							</ul>
+							<p>Al pagar con tarjeta disfrutas de facilidades de pago y seguridad en las transacciones.</p>
+						</div>
+					</div>
+					<div class="columna columna-33 columna-mb-100">
+						<div class="contenedor-serv">
+							<i class="far fa-clock" aria-hidden="true"></i>
+							<h3>Reservas</h3>
+							<p>Para reservar productos, contáctanos por teléfono o visita nuestra tienda. Te ayudamos a seleccionar y reservar lo que necesitas.</p>
+							<p>Beneficios de reservar:</p>
+							<ul>
+								<li>Aseguras la disponibilidad de los productos</li>
+								<li>Evitas esperas innecesarias</li>
+								<li>Recibes atención personalizada</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-            <!-- Producto 4 -->
-            <div class="columna columna-50 columna-mb-100 sin-padding">
-                <div class="contenedor-cuadrado">
-                    <img src="img/img6.jpg" alt="Electricidad e Iluminación">
-                    <div class="contenido-cuadrado">
-                        <h2 style="color: #FFD700;">ELECTRICIDAD E ILUMINACIÓN</h2>
-                        <a href="https://wa.me/59177692950?text=Hola%20Fernando%20quiero%20info%20sobre%20materiales" class="btn boton-amarillo" target="_blank">VER MÁS</a>
-                    </div>
-                </div>
-            </div>
+		<section id="testimonio" class="seccion">
+			<div class="trama-video"></div>
+			<div class="container">
+				<div class="fila fila-centrada">
+					<div class="columna columna-50 columna-mb-100 centrar-texto">
+						<h2 class="titulos wow slideInLeft" data-wow-duration="2s">Testimonios</h2>
+					</div>
+				</div>
+				<div class="fila fila-centrada">
+					<div class="columna columna-50 columna-mb-100 centrar-texto">
+						<div class="owl-carousel owl-theme">
+							<div class="item">
+								<h3>Carlos S.</h3>
+								<blockquote class="centrar-texto inclinar--texto">"Siempre encuentro todo lo que necesito en esta ferretería. Tienen una gran variedad de productos y el personal es muy amable y conocedor. Me han ayudado a elegir las mejores herramientas para mis proyectos de construcción."</blockquote>
+							</div>
+							<div class="item">
+								<h3>María L.</h3>
+								<blockquote class="centrar-texto inclinar--texto">"La ferretería es mi lugar de confianza para cualquier reparación en casa. Los precios son competitivos y siempre tienen ofertas interesantes. Además, la atención al cliente es excelente."</blockquote>
+							</div>
+							<div class="item">
+								<h3>Jorge M.</h3>
+								<blockquote class="centrar-texto inclinar--texto">"Me encanta comprar aquí porque tienen de todo y la calidad de los productos es muy buena. Además, el servicio es rápido y eficiente. Recomiendo esta ferretería a todos."</blockquote>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 
-        </div>
-    </div>
-</section>
+	<footer>
+		<div class="prefooter">
+			<div class="container">
+				<div class="fila">
+					<div class="columna columna-100">
+						<div class="mapa">
+							<iframe title="Ubicación de Ferretería SuperMercado en Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d562.411608915626!2d-64.88044121704321!3d-14.826345181722258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93dd6f597a31eb83%3A0xef52d9abb36dde44!2sFerreteria%20Super%20Mercado!5e1!3m2!1ses-419!2sbo!4v1720036614208!5m2!1ses-419!2sbo" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pie">
+			<div class="container">
+				<div class="fila">
+					<div class="columna columna-33 empujar-33 empujar-mb-0 columna-mb-100 orden lista-redes">
+						<a href="https://www.facebook.com/tddferreteriasupermercado/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/FerreteriaSuperMercado" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+						<a href="https://wa.me/59177692950" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+						<a href="https://www.tiktok.com/@fersupermerc" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+						<a href="https://www.youtube.com/FerreteriaSuperMercado" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+					</div>
+					<div class="columna columna-33 columna-mb-100">
+						&reg; Derechos Reservados 2024<br>
+						<!-- Antes: href="www.JedisProduccion" (enlace roto). Cambia la URL por la real. -->
+						<a href="https://www.jedisproduccion.com" target="_blank" rel="noopener">&reg; JEDIs Web Solutions</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
+	<div class="trama-2"></div>
+	<div class="logo-load"><img src="img/logo.png" alt="" width="138" height="140"></div>
+	<div class="trama"></div>
 
-        <section id="local" style="padding: 50px 0; background: #f9f9f9;">
-            <div class="container text-center">
-                <h2 class="titulos" style="color: #003366;">Visitanos en Trinidad</h2>
-                <p>Av. Panamericana, Zona Paitití</p>
-                <div class="mapa" style="margin-top: 20px; border: 5px solid #003366; border-radius: 10px; overflow: hidden;">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d562.411608915626!2d-64.88044121704321!3d-14.826345181722258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93dd6f597a31eb83%3A0xef52d9abb36dde44!2sFerreteria%20Super%20Mercado!5e1!3m2!1ses-419!2sbo!4v1720036614208!5m2!1ses-419!2sbo" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="pie" style="background-color: #001a33; color: white; padding: 40px 0; text-align: center;">
-            <div class="container">
-                <div class="fila">
-                    <div class="columna columna-100 lista-redes" style="margin-bottom: 20px;">
-                        <a href="https://www.facebook.com/tddferreteriasupermercado/" target="_blank" style="color: white; font-size: 25px; margin: 0 15px;"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://wa.me/59177692950?text=Hola!%20Vengo%20de%20la%20web" target="_blank" style="color: white; font-size: 25px; margin: 0 15px;"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://www.tiktok.com/@fernandoromerosoria" target="_blank" style="color: white; font-size: 25px; margin: 0 15px;"><i class="fab fa-tiktok"></i></a>
-                    </div>
-                    <div class="columna columna-100">
-                        <p>© 2026 Ferretería SuperMercado - Trinidad, Beni</p>
-                        <a href="https://wa.link/c6en1o" target="_blank" style="color: #FFD700; text-decoration: none;">Desarrollo: JEDIs Web Solutions</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <a href="https://wa.me/59177692950?text=Hola!%20Vengo%20de%20la%20web" style="position:fixed; width:65px; height:65px; bottom:30px; right:30px; background-color:#25d366; color:#FFF; border-radius:50px; text-align:center; font-size:35px; box-shadow: 2px 5px 15px rgba(0,0,0,0.3); z-index:1001;" target="_blank">
-        <i class="fab fa-whatsapp" style="margin-top:15px;"></i>
-    </a>
-
-    <script src="js/funciones.js"></script>
-    <script>
-        // Lógica del Contador Mejorada
-        function startCounters() {
-            $('.numero').each(function () {
-                var $this = $(this);
-                $({ countNum: 0 }).animate({ countNum: $this.attr('data-target') }, {
-                    duration: 2500,
-                    easing: 'swing',
-                    step: function () { 
-                        $this.text(Math.ceil(this.countNum).toLocaleString()); 
-                    },
-                    complete: function () { 
-                        $this.text(parseInt(this.countNum).toLocaleString() + (parseInt($this.attr('data-target')) > 34 ? '+' : '')); 
-                    }
-                });
-            });
-        }
-
-        var viewed = false;
-        $(window).scroll(function() {
-            var offset = $('#contador').offset().top - $(window).height();
-            if (!viewed && $(window).scrollTop() > offset) {
-                viewed = true;
-                startCounters();
-            }
-        });
-
-        // Ocultar oferta si ya pasó la fecha
-        const fechaFin = new Date("2026-01-31T00:00:00"); // Expira al iniciar el 1 de febrero
-        if (new Date() > fechaFin) {
-            document.getElementById("bloque-liquidacion").style.display = "none";
-        }
-
-        new WOW().init();
-    </script>
+	<div class="cuerpoimagen">
+		<img src="" alt="">
+		<a href="#" class="cerrarimagen" aria-label="Cerrar imagen"><i class="fas fa-times" aria-hidden="true"></i></a>
+	</div>
 </body>
 </html>
